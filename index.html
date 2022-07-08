@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>google search</title>
     <style>
-        .search{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        body{
-            
-        }
         .form{
             display: flex;
             flex-direction: column;
@@ -28,28 +20,32 @@
             padding: 10px 10px;
             
         }
-        #submit{
+        .submit{
             width: 160px;
-            margin: 20px 50px;
-            font-size: 1.3em;
+            margin: 20px 5px;
+            font-size: 14px;
             border: none;
-            padding: 3px 0;
+            padding: 10px 2px;
             font-weight: 100;
+            border-radius: 5px;
             
         }
-        #submit:hover{
-            background-color: rgb(184, 184, 184);
-            border: .5px solid rgb(102, 101, 101);
+        .submit:hover{
+            background-color: rgb(26, 26, 26);
+            border: .5px solid rgb(24, 24, 24);
+            color: aliceblue;
         }
         h2{
             font-size: 70px;
             text-align: center;
         }
+        
         nav a{
             text-decoration: none;
             font-weight: 700;
             color: black;
             padding: 15px;
+            font-size: 16px;
             
         }
         a:hover{
@@ -66,19 +62,21 @@
     </style>
 </head>
 <body>
-    <section>
-        <header>
-            <nav id="nav">
-                <a href="">Google Photo Search</a>
-                <a href="">Google Advance Search</a>
-            </nav>
-        </header>
-    </section>
+    
+    <header>
+        <nav id="nav">
+            <a href="file:///M:/Web/Web/practice/edx/Search/imagego.html">Google Photo Search</a>
+            <a href="file:///M:/Web/Web/practice/edx/Search/advancego.html">Google Advance Search</a>
+        </nav>
+    </header>
     <section class="search">
         <form method="get" action="https://google.com/search" class="form">
             <h2>Google</h2>
             <input id="search" type="text" placeholder="Search Google">
-            <input id="submit" type="submit" value="Google Search">
+            <div id="button">
+                <input class="submit" type="submit" value="Google Search">
+                <input class="submit" type="submit" value="I'm Feeling Lucky">
+            </div>
         </form>
     </section>
 </body>
