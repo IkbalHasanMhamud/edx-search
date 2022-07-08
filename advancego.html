@@ -38,10 +38,18 @@
             font-size: 25px;
             color: rgb(156, 6, 6);
         }
+        .page-search{
+            display: grid;
+            grid-template-columns: repeat(1,1fr) 1000px;
+            padding: 5px 0;
+            font-size: 15px;
+        }
         main{
             margin: 3% 5%;
         }
-        
+        .lavel{
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +67,26 @@
         
     </header>
     <main>
-        <form action="">
+        <form action="https://google.com/search">
+            <div class="page-search">
+                <label class="lavel" for="all">all these words:</label>
+                <input type="text" id="all" name="all" placeholder="first"><br>
+            </div>
+            <div class="page-search">
+                <label class="lavel" for="exact">this exact words:</label>
+                <input type="text" id="exact" name="exact" placeholder="two"><br>
+            </div>
+            <div class="page-search">
+                <label class="lavel" for="any">any of these words:</label>
+                <input type="text" id="any" name="any" placeholder="three"><br>
+            </div>
+            <div class="page-search">
+                <label class="lavel" for="none">none of these words:</label>
+                <input type="text" id="none" name="none" placeholder="four">
+            </div>
+            
+            
+            
             
         </form>
     </main>
